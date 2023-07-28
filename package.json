@@ -1,0 +1,45 @@
+{
+  "name": "api-ecommerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "ts-standard",
+    "dev": "ts-node-dev src/index.ts",
+    "tsc": "tsc",
+    "start": "node build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Federico Pelech",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "2.8.13",
+    "@types/express": "4.17.17",
+    "@types/node": "20.4.5",
+    "prettier": "3.0.0",
+    "ts-node": "10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "ts-standard": "^12.0.2",
+    "typescript": "5.1.6"
+  },
+  "dependencies": {
+    "@types/node-schedule": "^2.1.0",
+    "cors": "2.8.5",
+    "dotenv": "16.3.1",
+    "express": "4.18.2",
+    "node-schedule": "^2.1.1"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
+    "extends": ["./node_modules/ts-standard/eslintrc.json"],
+    "rules": {
+      "semi": "off",
+      "@typescript-eslint/semi": "off",
+      "no-return-await": "off",
+      "@typescript-eslint/return-await": "off",
+      "@typescript-eslint/strict-boolean-expressions": "off"
+    }
+  }
+}
